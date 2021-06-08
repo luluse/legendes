@@ -1,11 +1,8 @@
-
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { signup } from '../firebase/auth';
 
-
 function Signup() {
-
   const { register, handleSubmit, reset } = useForm();
   const [isLoading, setLoading] = useState(false);
 
@@ -20,6 +17,8 @@ function Signup() {
     setLoading(false);
   }
 
+  const formClassName = `ui form ${isLoading ? 'loading' : ''}`;
+
   return (
     <div className="login-container">
       <div className="ui card login-card">
@@ -33,7 +32,7 @@ function Signup() {
                     type="text"
                     name="firstName"
                     placeholder="First Name"
-                    ref={register}
+                    {...register("firstName")}
                   />
                 </label>
               </div>
@@ -44,7 +43,7 @@ function Signup() {
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
-                    ref={register}
+                    {...register("lastName")}
                   />
                 </label>
               </div>
@@ -56,7 +55,7 @@ function Signup() {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  ref={register}
+                  {...register("email")}
                 />
               </label>
             </div>
@@ -67,7 +66,7 @@ function Signup() {
                   type="password"
                   name="password"
                   placeholder="Password"
-                  ref={register}
+                  {...register("password")}
                 />
               </label>
             </div>
