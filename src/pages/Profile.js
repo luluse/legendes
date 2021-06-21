@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useSession } from '../firebase/UserProvider';
 import { firestore } from '../firebase/config';
 import { updateUserDocument } from '../firebase/user';
+import { ProfileImage } from '../ProfileImage';
 
 const Profile = () => {
   const { user } = useSession();
@@ -43,13 +44,15 @@ const Profile = () => {
     return null;
   }
 
-  const formClassname = `ui form ${isLoading ? 'loading' : ''}`;
+  const formClassname = `ui big form twelve wide column ${isLoading ? 'loading' : ''}`;
 
   return (
 <div
       className="add-form-container"
       style={{ maxWidth: 960, margin: '50px auto' }}
     >
+    <div className="ui grid stackable">
+        <ProfileImage id={params.id} />
       <form className={formClassname} onSubmit={handleSubmit(onSubmit)}>
         <div className="fields">
           <div className="eight wide field">
@@ -124,6 +127,7 @@ const Profile = () => {
           Submit
         </button>
       </form>
+      </div>
     </div>
   );
 };
