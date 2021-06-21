@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
+
+/src/firebase/grid-legends-firebase-adminsdk-wiv4v-9ad3a026a3.json
