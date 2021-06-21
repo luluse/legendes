@@ -38,7 +38,7 @@ function Login(props) {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  {...register("email")}
+                  ref={register}
                 />
               </label>
             </div>
@@ -49,7 +49,7 @@ function Login(props) {
                   type="password"
                   name="password"
                   placeholder="Password"
-                  {...register("password")}
+                  ref={register}
                 />
               </label>
             </div>

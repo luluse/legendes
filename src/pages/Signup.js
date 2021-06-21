@@ -39,7 +39,7 @@ function Signup(props) {
                     type="text"
                     name="firstName"
                     placeholder="First Name"
-                    {...register("firstName")}
+                    ref={register}
                   />
                 </label>
               </div>
@@ -50,7 +50,7 @@ function Signup(props) {
                     type="text"
                     name="lastName"
                     placeholder="Last Name"
-                    {...register("lastName")}
+                    ref={register}
                   />
                 </label>
               </div>
@@ -62,7 +62,7 @@ function Signup(props) {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  {...register("email")}
+                  ref={register}
                 />
               </label>
             </div>
@@ -73,7 +73,7 @@ function Signup(props) {
                   type="password"
                   name="password"
                   placeholder="Password"
-                  {...register("password")}
+                  ref={register}
                 />
               </label>
             </div>
