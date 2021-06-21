@@ -9,6 +9,7 @@ const Profile = () => {
   const params = useParams();
   const { register, setValue } = useForm();
   const [userDocument, setUserDocument] = useState(null);
+  const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
     const docRef = firestore.collection('users').doc(params.id);
@@ -31,7 +32,7 @@ const Profile = () => {
   }
 
   return (
-    <div
+<div
       className="add-form-container"
       style={{ maxWidth: 960, margin: '50px auto' }}
     >
@@ -40,13 +41,13 @@ const Profile = () => {
           <div className="eight wide field">
             <label>
               Name
-              <input type="text" name="name" {...register('name', { required: true })} />
+              <input type="text" name="name" ref={register} />
             </label>
           </div>
           <div className="eight wide field">
             <label>
               Email
-              <input type="text" name="email" disabled {...register('email')} />
+              <input type="text" name="email" disabled ref={register} />
             </label>
           </div>
         </div>
@@ -54,25 +55,25 @@ const Profile = () => {
           <div className="six wide field">
             <label>
               Address
-              <input type="text" name="address" {...register('address', { required: true })} />
+              <input type="text" name="address" ref={register} />
             </label>
           </div>
           <div className="five wide field">
             <label>
               City
-              <input type="text" name="city" {...register('city', { required: true })} />
+              <input type="text" name="city" ref={register} />
             </label>
           </div>
           <div className="two wide field">
             <label>
               State
-              <input type="text" name="state" {...register('state', { required: true })} />
+              <input type="text" name="state" ref={register} />
             </label>
           </div>
           <div className="three wide field">
             <label>
               Zip
-              <input type="text" name="zip" {...register('zip', { required: true })} />
+              <input type="text" name="zip" ref={register} />
             </label>
           </div>
         </div>
@@ -80,13 +81,13 @@ const Profile = () => {
           <div className="field">
             <label>
               Phone
-              <input type="text" name="phone" {...register('phone', { required: true })} />
+              <input type="text" name="phone" ref={register} />
             </label>
           </div>
           <div className="field">
             <label>
               Specialty
-              <select className="specialty" name="specialty" {...register('specialty', { required: true })}>
+              <select className="specialty" name="specialty" ref={register}>
                 <option value="field agent">Field Agent</option>
                 <option value="covert operations">Covert Operations</option>
                 <option value="intelligence officer">
@@ -98,7 +99,7 @@ const Profile = () => {
           <div className="field">
             <label>
               ip
-              <input type="text" name="ip" {...register('ip', { required: true })}/>
+              <input type="text" name="ip" />
             </label>
           </div>
         </div>
