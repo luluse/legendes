@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "dotenv": "^4.0.0",
     "firebase": "^8.6.5",
+    "firebase-admin": "^9.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^5.7.2",
