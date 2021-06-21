@@ -1,2 +1,2 @@
 # legendes
-React app powered by Firebase
+Serverless React app powered by Firebase
