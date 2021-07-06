@@ -3,12 +3,14 @@
 ### Serverless React app powered by Firebase
 
 
-## Tech
+### Tech
 - firebase
 - authentication
 - routing
 - react hooks
 - serverless computing
+- react
+- Semantic UI
 
 ### Firebase tools:
 
