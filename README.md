@@ -27,14 +27,17 @@ npm start
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+### Deployed App
+[Follow this link to access the deployed app](https://grid-legends.web.app/login)
 
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Business Requirements
+You are an intelligence agency. This app allows your spys to create their profile and put in their information. The boss can keep track of all the spies.
+
+### Key features
+- A spy can create their profile and fill in their informatiosn
+- A spy has only access to their profile and can modify it as needed
+- The boss has the admin ability
+- The boss can see the list of all profiles
+- The boss can modify the profile of any spy
 
