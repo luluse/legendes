@@ -1,12 +1,12 @@
-# legendes
+# Legendes
 
 ### Serverless React app powered by Firebase
 
 ## Welcome to the Grid
-We will help you keep your legendes (your spys) on track!
+We will help you keep your legendes (French word for spy identities) on track!
 
 ## Business Requirements
-You are an intelligence agency. This app allows your spys to create their profile and put in their information. The boss can keep track of their team of active spies.
+You are an intelligence agency. This app allows your spies to create their profile and put in their information. The boss can keep track of their team of active spies.
 
 ### Key features
 - A spy can create their profile and fill in their informatiosn
@@ -23,6 +23,18 @@ You are an intelligence agency. This app allows your spys to create their profil
 - serverless computing
 - react
 - Semantic UI
+
+### User Stories
+- As a boss I want that all my spies can create a profile and put in their sensitive information
+- As a boss I want this data to be protected by a password
+- As a boss I want my spies to be able tp update their info when needed
+- As a boss I want to be able to access the full list of my spies
+- As a boss I want to be able to access and update my team's data
+
+- As a spy I want to be able to create my profile and fill in my information
+- As a spy I want my information to be protected and non accessible by anyone but me and my boss
+- As a spy I want to be able to update my data when needed
+
 
 ### Firebase tools:
 
