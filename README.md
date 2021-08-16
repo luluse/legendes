@@ -3,7 +3,7 @@
 ### Serverless React app powered by Firebase
 
 ## Welcome to the Grid
-We will help you keep your legendes (French word for spy identities) on track!
+We will help you keep your **Legendes** (French word for spy identities) on track!
 
 ## Business Requirements
 You are an intelligence agency. This app allows your spies to create their profile and put in their information. The boss can keep track of their team of active spies.
